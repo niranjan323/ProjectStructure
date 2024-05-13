@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Npgsql" Version="8.0.3" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Modules\Base\CoreWebApis.Modules.Base.DL\CoreWebApis.Modules.Base.DL.csproj" />
+    <ProjectReference Include="..\..\Modules\Home\CoreWebApis.Modules.Home.DL\CoreWebApis.Modules.Home.DL.csproj" />
+    <ProjectReference Include="..\..\Modules\Login\CoreWebApis.Modules.Login.DL\CoreWebApis.Modules.Login.DL.csproj" />
+    <ProjectReference Include="..\..\Modules\Login\CoreWebApis.Modules.Login.Model\CoreWebApis.Modules.Login.Model.csproj" />
+  </ItemGroup>
+
+</Project>

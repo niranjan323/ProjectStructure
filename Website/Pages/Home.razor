@@ -1,0 +1,13 @@
+﻿@page "/Home"
+@inject CoreWebApis.Modules.Home.BL.Interfaces.IHomeViewModel _viewmodel
+
+@if (IsInitialised)
+{
+    @foreach (var item in customers)
+    {
+        <p>@item.Name</p>
+        <p>@item.Sex</p>
+        <p>@item.Age</p>
+    }
+}
+

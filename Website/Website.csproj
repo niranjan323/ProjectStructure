@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk.BlazorWebAssembly">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="8.0.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="8.0.2" PrivateAssets="all" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Features" Version="5.0.17" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Modules\Home\CoreWebApis.Modules.Home.BL\CoreWebApis.Modules.Home.BL.csproj" />
+    <ProjectReference Include="..\Modules\Home\CoreWebApis.Modules.Home.Model\CoreWebApis.Modules.Home.Model.csproj" />
+    <ProjectReference Include="..\Modules\Login\CoreWebApis.Modules.Login.BL\CoreWebApis.Modules.Login.BL.csproj" />
+    <ProjectReference Include="..\Modules\Login\CoreWebApis.Modules.Login.DL\CoreWebApis.Modules.Login.DL.csproj" />
+    <ProjectReference Include="..\Modules\Login\CoreWebApis.Modules.Login.Model\CoreWebApis.Modules.Login.Model.csproj" />
+  </ItemGroup>
+
+</Project>
